@@ -1,0 +1,24 @@
+
+
+
+
+
+/*talk about inheritance???*/
+
+/*will apply to all the things on the page*/
+ul {
+    background: red;
+
+}
+
+ol {
+    background: blue;
+}
+
+/* to select individual classes*/
+.forscoping li {
+    color: green;
+
+}
+
+
