@@ -3,52 +3,55 @@
 
 <head>
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="complete.css" type="text/css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
           type="text/css">
     <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-beta.1.css" type="text/css">
-
-    <title> Example Static website?</title>
 </head>
+<title> Example Static website?</title>
 
 
 <body>
 
 <!--NAV BAR-->
-
-
 <nav class="navbar navbar-expand-md bg-primary navbar-dark">  <!-- first we want to declare nav -->
 
     <!-- container to hold things -->
     <div class="container">
-        <!--title.. or "brand-->
-        <a class="navbar-brand" href="#">
-            <i class="fa d-inline fa-lg fa-cloud"></i>
-            <b> Web Development Organization</b>
-        </a>
 
+        <!--title.. or "brand-->
+        <a class="navbar-brand" href="#"><i class="fa d-inline fa-lg fa-cloud"></i><b> Web Development Organization</b></a>
+
+        <!--Buttton for hamburger menu-->
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
+
         <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
 
 
+            <!--navbars go in unordered lists for links-->
             <ul class="navbar-nav">
 
-
+                <!--nav items are the items in the bars-->
                 <li class="nav-item">
-                    <a class="nav-link" href="complete.html">Completed </a>
+                    <!--not sure but thats the glyph-->
+                    <a class="nav-link" href="complete.html"><i class="fa d-inline fa-lg fa-bookmark-o"></i> Complete
+                        page!</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="http://www.uno.edu/">UNO</a>
 
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa d-inline fa-lg fa-envelope-o"></i>
+                        Contacts</a>
                 </li>
+
 
             </ul>
 
@@ -57,77 +60,75 @@
                 <i class="fa d-inline fa-lg fa-user-circle-o">
 
                 </i> Sign in</a>
-
-
         </div>
     </div>
 </nav>
 
-
 <!--END NAV BAR-->
 
 <!--SECTION UNDER NAVBAR-->
-
+<!--py-5 is padding and spacing  https://v4-alpha.getbootstrap.com/utilities/spacing/-->
 <div class="py-5 text-center opaque-overlay"
      style="background-image: url('webdevelopment-img.jpg ');">
-    <div class="container py-5">
 
+
+    <!--Things go in containers for the grid-->
+    <div class="container py-5">
+        <!--talk about rows-->
         <div class="row">
             <div class="col-md-12 text-white">
+
                 <h1 class="display-3 mb-4">This is an example </h1>
 
+                <!--lead is just a way to make a paragraph pop out-->
                 <p class="lead mb-5">I took this from pigendo lel
                     <br> Super unprofessional website! </p>
-
-
                 <a href="#" class="btn btn-lg mx-1 btn-secondary"> An example Secondary Button, notice its not
                     colorful</a>
                 <a href="#" class="btn btn-lg btn-primary mx-1"> An example Primary Button</a>
 
             </div>
-
         </div>
 
-        <div class="row py-5 forscoping" style="background: green;">
+        <div class="row py-5 forscoping">
+
+            <!--talk about columns-->
             <div class="col-md-5">
+                <!--talk about ordered lists-->
                 <ol class="">
                     <li>insert first</li>
                     <li>insert second</li>
                     <li>insert third</li>
                     <li>insert fourth</li>
                     <li>insert last</li>
-
-
                 </ol>
             </div>
 
+
             <div class="col-md-5">
-                <ul class="text-right">
+
+                <!--talk about unordered lists-->
+                <ul class="">
                     <li> I am</li>
                     <li> super unordered</li>
                     <li> or something</li>
-                    <l1><a href="http://google.com">
-                        you can put links in here!!!
-
-
-                    </a></l1>
+                    <l1><a href="google.com">you can put links in here!!! </a></l1>
 
                 </ul>
             </div>
 
-
         </div>
 
-        <div class="row" style="background: cyan; color: #CCCC00">
-            <div class="container">
-                <h2>
-                    Basic Table
-                </h2>
 
+        <!--in line styling-->
+        <div class="row" style="background: yellow;">
+
+            <!--another container for formatting-->
+            <div class="container">
+                <h2>Basic table</h2>
                 <table class="table">
                     <thead>
                     <tr>
-                        <th>Count</th>
                         <th>
                             A header
                         </th>
@@ -136,37 +137,33 @@
                         </th>
                     </tr>
                     </thead>
+                    <!--talk about the table body-->
                     <tbody>
+                    <!--talk about the table rows-->
                     <tr>
-                        <td>1</td>
-                        <td></td>
-                        <td>potato</td>
+                        <td>tomato</td>
+                        <td> potato</td>
                     </tr>
                     <tr>
-                        <td>2</td>
                         <td> You can add images into the tables as well</td>
                         <td>such as below</td>
 
                     </tr>
-
+                    <tr>
+                        <td> Here is meme about css developing</td>
+                        <!--talk about images in html-->
+                        <td><img src="image.jpg" alt="image"></td>
+                    </tr>
                     </tbody>
-
-
                 </table>
-
             </div>
         </div>
-
     </div>
-
 
 </div>
 
-
 <!-- END SECTION UNDER NAVBAR-->
 
-<!--SECTION UNDER THAT-->
-<!--END THAT SECTION-->
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
