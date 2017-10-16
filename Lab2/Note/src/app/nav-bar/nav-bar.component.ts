@@ -10,4 +10,4 @@ selector: 'navvybar',
 })
 
 
-export class NavvybarComponent { }
+export class NavBarComponent { }
