@@ -1,0 +1,18 @@
+<div class="panel panel-default">
+  <div *ngIf="error" class="alert alert-danger">
+    <span class="glyphicon glyphicon-exclamation-sign"></span>
+    {{error}}
+  </div>
+
+
+  <div class="panel-heading">
+    <!--<a [routerLink]="post.postId">{{post.title}}</a>-->
+
+    <h1> {{this.note.author}}</h1>
+
+
+    <div class="text-right">
+      <p>{{this.note.body}}</p>
+    </div>
+  </div>
+</div>
